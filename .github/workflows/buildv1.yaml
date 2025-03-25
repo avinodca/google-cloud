@@ -14,8 +14,10 @@ jobs:
       name: 'Authenticate to Google Cloud'
       uses: 'google-github-actions/auth@v2'
       with:
-        project_id: 'my-second-project-453608'
-        workload_identity_provider: 'projects/464582918280/locations/global/workloadIdentityPools/github/providers/my-repo'
+        #project_id: 'my-second-project-453608'
+        service_account: 'my-service-account@my-second-project-453608.iam.gserviceaccount.com'
+        #workload_identity_provider: 'projects/464582918280/locations/global/workloadIdentityPools/github/providers/my-repo'
+        workload_identity_provider: 'projects/464582918280/locations/global/workloadIdentityPools/github1/providers/my-repo1'
     
     - uses: hashicorp/setup-terraform@v3
 
