@@ -1,8 +1,6 @@
 name: provision infrastructure v2 - destroy
 on:
   workflow_dispatch:
-  schedule:
-   - cron: 30 * * * mon-fri
 permissions:
   contents: read
   pages: write
