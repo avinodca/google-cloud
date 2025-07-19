@@ -2,7 +2,7 @@ name: provision infrastructure v1 on creation
 on:
   workflow_dispatch:
   schedule:
-   - cron: 30 * * * mon-fri
+  # - cron: 30 * * * mon-fri
 permissions:
   contents: read
   pages: write
